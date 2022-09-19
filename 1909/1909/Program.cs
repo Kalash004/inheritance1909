@@ -16,6 +16,9 @@ public class Program
             "Saint {2} said: {3} \n" +
             "Politician {4} said: {5}", human.getName(), human.isLying(), saint.getName(), saint.isLying(), politician.getName(), politician.isLying()));
 
+
+
+
     }
 
 }

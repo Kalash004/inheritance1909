@@ -13,30 +13,35 @@ namespace _1909
 
         public InterestAccount(int id, int amount) : base(id, amount)
         {
-            this.precent = 0;
+            this.precent = 10;
             this.interest = getInterest();
         }
 
-        public void setProcentage (int value)
+        public virtual void setProcentage (int value)
         {
             if (value > 0) precent = value;
             else throw new Exception("Precent cant be negative");
             this.interest = getInterest();
         }
 
-        public int getProcentage ()
+        public virtual int getProcentage ()
         {
             return precent;
         }
 
-        private int getInterest()
+        protected virtual int getInterest()
         {
             return base.amount / precent;
         }
 
-        private void addInterest()
+        public virtual void addInterest()
         {
             base.amount = base.amount + interest;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString()+String.Format("Precent: {0}\nInterest: {1}\n",this.precent.ToString(),this.interest.ToString());
         }
 
 

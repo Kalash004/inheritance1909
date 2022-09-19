@@ -36,7 +36,7 @@ namespace _1909
         public override string ToString()
         {
             return String.Format("ID: {0}\n" +
-                "Amount: {0}",id.ToString(),amount.ToString());
+                "Amount: {0}\n",id.ToString(),amount.ToString());
         }
 
     }

@@ -17,7 +17,7 @@ public class Program
             "Politician {4} said: {5}", human.getName(), human.isLying(), saint.getName(), saint.isLying(), politician.getName(), politician.isLying()));
 
 
-        InterestAccountPoplatek acc = new InterestAccountPoplatek(001,10000);
+        InterestAccountPoplatek acc = new InterestAccountPoplatek(001,100000);
         Console.WriteLine(acc.ToString());
     }
 
